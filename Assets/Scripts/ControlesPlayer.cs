@@ -10,15 +10,15 @@ public class ControlesPlayer : MonoBehaviour
     private Vector2 dir;
     public float jumpForce;
     private bool isGrounded;
-    
+    private float _horizontalDir;
 
     public int jumpCount;
     public int maxJumps;
     
     private Animator animator;
 
-    public InputActionReference move;
-    public InputActionReference jump;
+    //public InputActionReference move;
+    //public InputActionReference jump;
 
     void Start()
     {
@@ -27,37 +27,25 @@ public class ControlesPlayer : MonoBehaviour
 
     void Update()
     {
-        dir = move.action.ReadValue<Vector2>();
+        animator.SetFloat("Speed", Mathf.Abs(_horizontalDir)); 
         animator.SetBool("isGrounded", isGrounded);
 
-        float speed = Mathf.Abs(dir.x); 
-        animator.SetFloat("Speed", speed);
-
-        if (dir.x > 0) 
+        if (_horizontalDir > 0) 
         {
             transform.localScale = new Vector3(-0.8f, 0.8f, 0.8f); 
         }
-        else if (dir.x < 0) 
+        else if (_horizontalDir < 0) 
         {
             transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
         }
-
-
     }
 
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(dir.x * moveSpeed, rb.linearVelocity.y);
-    }
-
-    private void OnEnable()
-    {
-        jump.action.started += Jump;
-    }
-
-    private void OnDisable()
-    {
-        jump.action.started -= Jump;
+        Vector2 velocity = rb.linearVelocity;
+        velocity.x = _horizontalDir * moveSpeed;
+        rb.linearVelocity = velocity;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -76,8 +64,13 @@ public class ControlesPlayer : MonoBehaviour
             isGrounded = false;
         }
     }
+    private void OnMove(InputValue value)
+    {
+        var inputVal = value.Get<Vector2>();
+        _horizontalDir = inputVal.x;
+    }
 
-    private void Jump(InputAction.CallbackContext obj)
+    private void OnJump(InputValue value)
     {
         if (jumpCount <= maxJumps)
         {
