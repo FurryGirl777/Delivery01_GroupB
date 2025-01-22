@@ -35,11 +35,11 @@ public class ControlesPlayer : MonoBehaviour
 
         if (dir.x > 0) 
         {
-            transform.localScale = new Vector3(-1, 1, 1); 
+            transform.localScale = new Vector3(-0.8f, 0.8f, 0.8f); 
         }
         else if (dir.x < 0) 
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
         }
 
 
