@@ -29,7 +29,7 @@ Keyboard:
 
 ### Screenshots
 
-_TODO: Show your game to the world, animated GIFs recommended!._
+![MEOW   COLLECT](https://github.com/user-attachments/assets/e10eebb9-c157-43d1-9ef1-78c2b9bd1a3c)
 
 ### Developers
 
@@ -38,16 +38,8 @@ _TODO: Show your game to the world, animated GIFs recommended!._
  - Carla López Vila - $(Role/Tasks Developed)
  - Alexander Masip Martínez -
 
-### Links
-
- - YouTube Gameplay: $(YouTube Link)
- - itch.io Release: $(itch.io Game Page)
- - Steam Release: $(Steam Game Page)
-
 ### License
 
 This game sources are licensed under MIT license. Check [LICENSE](LICENSE) for further details.
 
-$(Additional Licenses)
-
-*Copyright (c) $(Year) $(Developers Names)*
+*Copyright (c) 2025 Nerea Carmona, Iris Fernández, Carla López and Alexandre Masip.
