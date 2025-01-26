@@ -1,16 +1,16 @@
+using System;
 using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public static Action<PowerUp> OnPowerUp;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.tag == "Gato")
+        {
+             OnPowerUp?.Invoke(this);
+            Destroy(gameObject);
+        }
     }
 }

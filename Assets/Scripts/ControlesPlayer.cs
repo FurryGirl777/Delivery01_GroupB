@@ -11,6 +11,7 @@ public class ControlesPlayer : MonoBehaviour
     public float jumpForce;
     private bool isGrounded;
     private float _horizontalDir;
+    private bool powerUp = false;
 
     public int jumpCount;
     public int maxJumps;
@@ -54,6 +55,15 @@ public class ControlesPlayer : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        PowerUp.OnPowerUp += UpdateBool;
+    }
+
+    private void OnDisable()
+    {
+        PowerUp.OnPowerUp -= UpdateBool;
+    }
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
@@ -71,9 +81,21 @@ public class ControlesPlayer : MonoBehaviour
     {
         if (jumpCount <= maxJumps)
         {
-            rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            if (powerUp)
+            {
+                rb.AddForce(new Vector2(0f, jumpForce + 4), ForceMode2D.Impulse);
+            }
+            else
+            {
+                rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            }
             jumpCount++;
         }
+    }
+
+    private void UpdateBool(PowerUp power)
+    {
+        powerUp = true;
     }
 }
  
