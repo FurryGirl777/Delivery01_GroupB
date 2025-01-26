@@ -29,6 +29,7 @@ Keyboard:
 
 ### Screenshots
 
+![image](https://github.com/user-attachments/assets/315b307e-59ea-4e95-a780-c46d94bde45c)
 ![MEOW   COLLECT](https://github.com/user-attachments/assets/e10eebb9-c157-43d1-9ef1-78c2b9bd1a3c)
 
 ### Developers
