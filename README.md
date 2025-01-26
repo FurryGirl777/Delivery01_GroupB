@@ -1,6 +1,7 @@
 ## Delivery 01 - MEOW & COLLECT
 
-![$(Game Title)](Screenshots/screenshot01.png "$(Game Title)")
+![image](https://github.com/user-attachments/assets/a34bf231-e5fc-47d1-95b3-74cebbf14304)
+
 
 ### Description
 
