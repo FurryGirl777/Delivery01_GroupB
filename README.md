@@ -34,10 +34,10 @@ Keyboard:
 
 ### Developers
 
- - Nerea Carmona Vela - $(Designer/Made the buttons of the main menu and game over)
- - Iris Fernández Cervera - $(Level Designer/Design the level)
- - Carla López Vila - $(Artist/Visual Aesthetic and Assets)
- - Alexander Masip Martínez - $(Programer/Scripts)
+ - Nerea Carmona Vela - (Designer/Made the buttons of the main menu and game over)
+ - Iris Fernández Cervera - (Level Designer/Design the level)
+ - Carla López Vila - (Artist/Visual Aesthetic and Assets)
+ - Alexander Masip Martínez - (Programer/Scripts)
 
 ### License
 
