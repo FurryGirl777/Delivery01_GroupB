@@ -17,9 +17,6 @@ public class ControlesPlayer : MonoBehaviour
     
     private Animator animator;
 
-    //public InputActionReference move;
-    //public InputActionReference jump;
-
     void Start()
     {
         animator = GetComponent<Animator>();
