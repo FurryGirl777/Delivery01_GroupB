@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3037835753038030586}
   - component: {fileID: 5474218238965551252}
   m_Layer: 0
-  m_Name: Gatito
+  m_Name: Cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
