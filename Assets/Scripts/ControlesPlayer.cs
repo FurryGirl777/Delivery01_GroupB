@@ -64,6 +64,7 @@ public class ControlesPlayer : MonoBehaviour
     {
         PowerUp.OnPowerUp -= UpdateBool;
     }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
@@ -71,6 +72,7 @@ public class ControlesPlayer : MonoBehaviour
             isGrounded = false;
         }
     }
+
     private void OnMove(InputValue value)
     {
         var inputVal = value.Get<Vector2>();
@@ -84,6 +86,7 @@ public class ControlesPlayer : MonoBehaviour
             if (powerUp)
             {
                 rb.AddForce(new Vector2(0f, jumpForce + 4), ForceMode2D.Impulse);
+                powerUp = false;
             }
             else
             {

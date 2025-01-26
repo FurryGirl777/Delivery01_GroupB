@@ -1,0 +1,34 @@
+{
+    "name": "Exit",
+    "maps": [
+        {
+            "name": "Exit",
+            "id": "f4311171-0fff-4e11-a198-f04ec69937a4",
+            "actions": [
+                {
+                    "name": "Exit",
+                    "type": "Button",
+                    "id": "b61bf528-38dc-4dee-9eab-0f2c2816433a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "366fca23-5a8d-4b73-8d4f-688cae7dcbb8",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Exit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
