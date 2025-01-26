@@ -29,14 +29,15 @@ Keyboard:
 
 ### Screenshots
 
+![image](https://github.com/user-attachments/assets/315b307e-59ea-4e95-a780-c46d94bde45c)
 ![MEOW   COLLECT](https://github.com/user-attachments/assets/e10eebb9-c157-43d1-9ef1-78c2b9bd1a3c)
 
 ### Developers
 
- - Nerea Carmona Vela - $(Role/Tasks Developed)
- - Iris Fernández Cervera - $(Role/Tasks Developed)
- - Carla López Vila - $(Role/Tasks Developed)
- - Alexander Masip Martínez -
+ - Nerea Carmona Vela - (Designer/Made the buttons of the main menu and game over)
+ - Iris Fernández Cervera - (Level Designer/Design the level)
+ - Carla López Vila - (Artist/Visual Aesthetic and Assets)
+ - Alexander Masip Martínez - (Programer/Scripts)
 
 ### License
 
